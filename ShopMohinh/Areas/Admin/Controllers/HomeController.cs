@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ShopMohinh.Areas.Admin.Controllers
-{
-    [Authorize(Roles = "Sale,Admin")]
+{    
     [Area("Admin")]
+	[Authorize(Roles = "Sale,Admin")]
     public class HomeController : Controller
     {
         public IActionResult Index()

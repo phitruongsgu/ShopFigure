@@ -9,10 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using ShopMohinh.Models;
 
 namespace ShopMohinh.Areas.Admin.Controllers
-{
-
-    [Authorize(Roles = "Admin")]
+{   
     [Area("Admin")]
+	[Authorize(Roles = "Admin")]
     public class RoleManagerController : Controller
     {
 
